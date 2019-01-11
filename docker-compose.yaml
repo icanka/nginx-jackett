@@ -14,8 +14,8 @@ services:
   jackett:
     image: linuxserver/jackett
     volumes:
-      - ~/jackettconfig:/config
-      - ~/torrentblackhole:/downloads
+      - ~/JackettFiles/jackettconfig:/config
+      - ~/JackettFiles/torrentblackhole:/downloads
       - /etc/localtime:/etc/localtime:ro
     environment:
       PGID: 1000
